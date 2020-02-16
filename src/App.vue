@@ -2,7 +2,7 @@
   <div id="app">
     <img id="logo" alt="Vue logo" src="./assets/logo.png">
     <div id="nav">
-      <router-link to="/">About Me</router-link> |
+      <router-link to="/">About</router-link> |
       <router-link to="/about">Projects</router-link> |
       <router-link to="/about">Contact</router-link> |
       <router-link to="/about">Feeds</router-link>
@@ -32,12 +32,16 @@
 }
 
 #nav {
+  padding: 10px;
   grid-row: 1 / 2;
   grid-column: 1/2;
   justify-self: right;
   height: fit-content;
   position:absolute;
   top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin: 0;
 }
 
 #nav a {
