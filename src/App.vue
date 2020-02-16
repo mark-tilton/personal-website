@@ -3,9 +3,9 @@
     <img id="logo" alt="Vue logo" src="./assets/logo.png">
     <div id="nav">
       <router-link to="/">About</router-link> |
-      <router-link to="/about">Projects</router-link> |
-      <router-link to="/about">Contact</router-link> |
-      <router-link to="/about">Feeds</router-link>
+      <router-link to="/projects">Projects</router-link> |
+      <router-link to="/contact">Contact</router-link> |
+      <router-link to="/feeds">Feeds</router-link>
     </div>
     <router-view id="content" />
   </div>
