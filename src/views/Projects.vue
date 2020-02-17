@@ -11,12 +11,9 @@
         <Project
           projectName="Quoridor"
           link="https://github.com/mark-tilton/quoridor"
-          description="An implementation of the game Quoridor in C++.
-                 Planned Functionality
-Human player interaction
-Neural network players
-Ladder matchmaking server for bots
-Website to view games and statistics from ladder server"
+          description="An implementation of the board game Quoridor in C++. 
+          Two AI compete to get to the other side by either moving, or
+          placing walls. Algorigthms used are Minimax and Monte Carlo Tree Search (MCTS)"
           img="quoridor_img.png"
         />
       </li>

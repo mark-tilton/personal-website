@@ -2,7 +2,10 @@
   <div id="Card">
     <img id="thumbnail" :src="require(`../assets/${img}`)" />
     <h3 id="header">
-      <a :href="link">{{ projectName }}</a>
+      <a :href="link">
+        <img id="ghubicon" src="../assets/github.png" />
+        {{ projectName }}
+      </a>
     </h3>
     <p id="description">{{ description }}</p>
   </div>
@@ -25,7 +28,7 @@ export default {
   padding: 0px;
   margin: 10px 5px;
   display: grid;
-  grid-template-rows: auto 100%;
+  grid-template-rows: 28px 100px;
   grid-template-columns: 128px auto;
   border: 1px;
   border-color: #2a3536;
@@ -36,7 +39,6 @@ export default {
 #header {
   margin: 5px 10px;
   font-weight: bold;
-  color: #dae4ee;
   justify-self: left;
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -46,10 +48,7 @@ export default {
 #header a {
   padding: 0px;
   text-decoration: none;
-}
-
-#header a:visited {
-  color: #dae4ee;
+  color: #f15323;
 }
 
 #description {
@@ -68,5 +67,10 @@ export default {
   border-radius: 5px 0px 0px 5px;
   padding: 0px;
   margin: 0px;
+}
+
+#ghubicon {
+  width: 16px;
+  height: 16px;
 }
 </style>
