@@ -1,13 +1,13 @@
 <template>
   <div id="app">
     <div id="title">
-      <img id="logo" alt="Mark Tilton" src="./assets/NegSpaceMTOrange.png" />
+      <img id="logo" alt="Mark Tilton" src="./assets/MarkTilton.png" />
     </div>
     <div id="nav">
-      <router-link to="/">About </router-link>
-      <router-link to="/projects">Projects </router-link>
-      <router-link to="/contact">Contact </router-link>
-      <router-link to="/feeds">Feeds </router-link>
+      <router-link class="routerlink" to="/">About</router-link>
+      <router-link class="routerlink" to="/projects">Projects</router-link>
+      <router-link class="routerlink" to="/contact">Contact</router-link>
+      <router-link class="routerlink" to="/feeds">Feeds</router-link>
     </div>
     <router-view id="content" />
   </div>
@@ -35,8 +35,6 @@
 }
 
 #logo {
-  width: 128px;
-  height: 128px;
   display: inline-block;
 }
 
@@ -70,5 +68,9 @@
 
 #content {
   grid-row: 2 / 3;
+}
+
+.routerlink {
+  margin: 0px 5px;
 }
 </style>
