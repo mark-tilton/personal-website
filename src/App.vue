@@ -14,6 +14,8 @@
 </template>
 
 <style>
+@import "./styles/resources.css";
+
 #app {
   margin: 20px;
   padding: 0px;
@@ -21,7 +23,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #dae4ee;
+  color: var(--main-fg-color);
   position: relative;
   display: grid;
   grid-template-rows: auto auto;
@@ -58,12 +60,12 @@
 
 #nav a {
   font-weight: bold;
-  color: #dae4ee;
+  color: var(--main-fg-color);
   text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
-  color: #e65f23;
+  color: var(--main-hl-color);
 }
 
 #content {
